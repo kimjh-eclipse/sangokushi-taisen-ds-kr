@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>삼국지대전 DS 한국어 패치</title>
+  <meta name="description" content="닌텐도 DS 삼국지대전 DS(三国志大戦DS, SEGA) 한국어 번역 패치 문서" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🀄</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=Noto+Serif+KR:wght@700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css" />
+  <style>
+    :root {
+      --crimson: #9e1b1b;
+      --crimson-deep: #6f1212;
+      --gold: #c8a15a;
+      --ink: #1c1a19;
+      --theme-color: #9e1b1b;
+    }
+    * { -webkit-font-smoothing: antialiased; }
+    body { font-family: 'Noto Sans KR', -apple-system, 'Segoe UI', 'Malgun Gothic', sans-serif; }
+
+    /* ---- 본문 ---- */
+    .markdown-section { max-width: 860px; }
+    .markdown-section h1, .markdown-section h2 {
+      font-family: 'Noto Serif KR', 'Noto Sans KR', serif;
+      letter-spacing: -0.01em;
+    }
+    .markdown-section h1 { font-weight: 900; }
+    .markdown-section h2 {
+      font-weight: 700; border-bottom: 2px solid #eee;
+      padding-bottom: .3em; margin-top: 2.4rem;
+    }
+    .markdown-section h2::before {
+      content: ""; display: inline-block; width: .5em; height: .5em;
+      margin-right: .5em; background: var(--crimson);
+      transform: rotate(45deg); vertical-align: middle;
+    }
+    .markdown-section a { color: var(--crimson); font-weight: 500; }
+    .markdown-section a:hover { color: var(--crimson-deep); text-decoration: underline; }
+    .markdown-section tr:nth-child(2n) { background: #faf7f2; }
+    .markdown-section th { background: var(--crimson); color: #fff; font-weight: 700; }
+    .markdown-section table { border-collapse: collapse; }
+    .markdown-section td, .markdown-section th { border: 1px solid #ead9c4; }
+    .markdown-section blockquote {
+      border-left: 4px solid var(--gold); background: #fbf6ec;
+      color: #5c503c; border-radius: 0 6px 6px 0;
+    }
+    .markdown-section code { color: var(--crimson-deep); background: #f6eee2; }
+    .markdown-section pre { background: #211d1a; }
+    .markdown-section pre > code { color: #f0e7d8; background: transparent; }
+
+    /* ---- 사이드바 ---- */
+    .sidebar { border-right: 1px solid #ece4d8; }
+    .sidebar .app-name-link { color: var(--crimson) !important; font-weight: 900; }
+    .sidebar ul li a { color: #4a423a; }
+    .sidebar ul li.active > a {
+      color: var(--crimson); font-weight: 700; border-right: 3px solid var(--crimson);
+    }
+    .app-name-link img, .sidebar-nav > p:first-child { font-weight: 900; }
+
+    /* ---- 표지 ---- */
+    section.cover.show {
+      background: radial-gradient(1200px 600px at 70% -10%, #b9302b 0%, #7d1616 45%, #4a0d0d 100%) !important;
+      color: #f6ecd8;
+    }
+    section.cover .cover-main > h1 { font-family: 'Noto Serif KR', serif; font-weight: 900; }
+    section.cover .cover-main > h1 a { color: #fff; font-size: 3.2rem; }
+    section.cover .cover-main > h1 small { color: var(--gold); font-weight: 700; }
+    section.cover blockquote p { color: #f0dcb8; font-size: 1.25rem; }
+    section.cover .cover-main > p:last-child a {
+      border-radius: 2rem; border-width: 2px; padding: .6em 2em; font-weight: 700;
+    }
+    section.cover .cover-main > p:last-child a:first-child {
+      background: var(--gold); border-color: var(--gold); color: #4a0d0d;
+    }
+    section.cover .cover-main > p:last-child a:first-child:hover { background: #d8b676; }
+    section.cover .cover-main > p:last-child a:last-child { color: #f6ecd8; border-color: #f6ecd8; }
+    section.cover ul { color: #f0dcb8; }
+
+    /* 배지 줄 */
+    .badges img { margin: 2px 4px 2px 0; }
+  </style>
+</head>
+<body>
+  <div id="app">불러오는 중…</div>
+  <script>
+    window.$docsify = {
+      name: '🀄 삼국지대전 DS<br><small style="font-weight:400;opacity:.7">한국어 패치</small>',
+      repo: 'https://github.com/kimjh-eclipse/sangokushi-taisen-ds-kr',
+      homepage: 'home.md',
+      loadSidebar: true,
+      loadNavbar: false,
+      coverpage: true,
+      onlyCover: false,
+      auto2top: true,
+      maxLevel: 3,
+      subMaxLevel: 3,
+      relativePath: true,
+      notFoundPage: true,
+      search: {
+        placeholder: '문서 검색…',
+        noData: '검색 결과가 없습니다.',
+        depth: 4
+      },
+      pagination: {
+        previousText: '이전',
+        nextText: '다음',
+        crossChapter: true
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code@2/dist/docsify-copy-code.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-pagination@2/dist/docsify-pagination.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-python.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+</body>
+</html>
