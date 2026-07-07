@@ -60,25 +60,6 @@
     }
     .app-name-link img, .sidebar-nav > p:first-child { font-weight: 900; }
 
-    /* ---- 표지 ---- */
-    section.cover.show {
-      background: radial-gradient(1200px 600px at 70% -10%, #b9302b 0%, #7d1616 45%, #4a0d0d 100%) !important;
-      color: #f6ecd8;
-    }
-    section.cover .cover-main > h1 { font-family: 'Noto Serif KR', serif; font-weight: 900; }
-    section.cover .cover-main > h1 a { color: #fff; font-size: 3.2rem; }
-    section.cover .cover-main > h1 small { color: var(--gold); font-weight: 700; }
-    section.cover blockquote p { color: #f0dcb8; font-size: 1.25rem; }
-    section.cover .cover-main > p:last-child a {
-      border-radius: 2rem; border-width: 2px; padding: .6em 2em; font-weight: 700;
-    }
-    section.cover .cover-main > p:last-child a:first-child {
-      background: var(--gold); border-color: var(--gold); color: #4a0d0d;
-    }
-    section.cover .cover-main > p:last-child a:first-child:hover { background: #d8b676; }
-    section.cover .cover-main > p:last-child a:last-child { color: #f6ecd8; border-color: #f6ecd8; }
-    section.cover ul { color: #f0dcb8; }
-
     /* 배지 줄 */
     .badges img { margin: 2px 4px 2px 0; }
   </style>
@@ -92,8 +73,7 @@
       homepage: 'home.md',
       loadSidebar: true,
       loadNavbar: false,
-      coverpage: true,
-      onlyCover: false,
+      coverpage: false,
       auto2top: true,
       maxLevel: 3,
       subMaxLevel: 3,
