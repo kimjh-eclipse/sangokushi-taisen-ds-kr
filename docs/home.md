@@ -1,5 +1,5 @@
 <p class="badges">
-  <img src="https://img.shields.io/badge/버전-v20260707-9e1b1b" alt="버전">
+  <img src="https://img.shields.io/badge/버전-v20260709-9e1b1b" alt="버전">
   <img src="https://img.shields.io/badge/플랫폼-Nintendo%20DS-c8a15a" alt="플랫폼">
   <img src="https://img.shields.io/badge/형식-xdelta-informational" alt="형식">
   <img src="https://img.shields.io/badge/번역-한국어-success" alt="한국어">
@@ -20,7 +20,7 @@
 | 대상 게임 | San Goku Shi Taisen (J) · 128MB · 게임코드 A3DJ |
 | 원본 MD5 | `4322aaa2144d997fe3fea0038b4bf9e3` |
 | 패치 형식 | xdelta3 (`.xdelta`) |
-| 최신 버전 | **v20260707** |
+| 최신 버전 | **v20260709** |
 | 동작 확인 | DeSmuME 0.9.13 · 실기 · 세이브 데이터 원본 호환 |
 
 ## 설치 및 적용
@@ -28,14 +28,14 @@
 1. 원본 일본판 롬을 준비합니다. **(이 저장소는 롬을 포함하지 않습니다.)**
    - 파일: `San Goku Shi Taisen (J).nds` (128MB)
    - MD5: `4322aaa2144d997fe3fea0038b4bf9e3`
-2. [패치 파일](https://github.com/kimjh-eclipse/sangokushi-taisen-ds-kr/raw/main/SGS_kr_patch_v20260707.xdelta)을 내려받아 xdelta(또는 xdeltaUI, Delta Patcher 등)로 적용합니다.
+2. [패치 파일](https://github.com/kimjh-eclipse/sangokushi-taisen-ds-kr/raw/main/SGS_kr_patch_v20260709.xdelta)을 내려받아 xdelta(또는 xdeltaUI, Delta Patcher 등)로 적용합니다.
 
    ```bash
-   xdelta -d -s "San Goku Shi Taisen (J).nds" SGS_kr_patch_v20260707.xdelta "San Goku Shi Taisen (K).nds"
+   xdelta -d -s "San Goku Shi Taisen (J).nds" SGS_kr_patch_v20260709.xdelta "San Goku Shi Taisen (K).nds"
    ```
 3. 적용 결과를 확인합니다 (선택).
-   - 한국어판 MD5: `0a59f57dd371bc73a3d97b91cacb9a9a`
-   - 패치 파일 MD5: `12cc7973c80e91304f74d9e6d8076256`
+   - 한국어판 MD5: `53820f596910ec0938e418aab73f97dd`
+   - 패치 파일 MD5: `b1309af4f0b78b1e77422ed9e68ea5f4`
 
 > 💡 GUI 툴만 쓰신다면 **xdeltaUI**에서 원본 롬을 Source, 패치를 Patch로 지정하고 Apply Patch를 누르면 됩니다.
 
@@ -60,7 +60,7 @@
 
 | 경로 | 내용 |
 |---|---|
-| `SGS_kr_patch_v20260707.xdelta` | 한국어 패치 본체 |
+| `SGS_kr_patch_v20260709.xdelta` | 한국어 패치 본체 (최신) |
 | `docs/patch-notes.md` | 패치노트 (적용법 · 번역 범위 · 알려진 한계) |
 | `docs/dev-log.md` | 리버스 엔지니어링 · 한글화 작업 기록 |
 | `tools/` | 언팩/리팩, 압축 코덱, 폰트 주입, 그래픽 식자, 에뮬레이터 자동화 도구 109종 |

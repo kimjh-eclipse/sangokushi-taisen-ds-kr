@@ -12,17 +12,17 @@
 1. 원본 일본판 롬을 준비합니다. (이 저장소는 롬 파일을 포함하지 않습니다)
    - 파일: `San Goku Shi Taisen (J).nds` (128MB)
    - MD5: `4322aaa2144d997fe3fea0038b4bf9e3`
-2. [`SGS_kr_patch_v20260707.xdelta`](SGS_kr_patch_v20260707.xdelta)를 내려받아 xdelta(또는 xdeltaUI, Delta Patcher 등)로 적용합니다.
+2. [`SGS_kr_patch_v20260709.xdelta`](SGS_kr_patch_v20260709.xdelta)를 내려받아 xdelta(또는 xdeltaUI, Delta Patcher 등)로 적용합니다.
    ```
-   xdelta -d -s "San Goku Shi Taisen (J).nds" SGS_kr_patch_v20260707.xdelta "San Goku Shi Taisen (K).nds"
+   xdelta -d -s "San Goku Shi Taisen (J).nds" SGS_kr_patch_v20260709.xdelta "San Goku Shi Taisen (K).nds"
    ```
 3. 적용 결과 확인 (선택):
-   - 한국어판 MD5: `0a59f57dd371bc73a3d97b91cacb9a9a`
-   - 패치 파일 MD5: `12cc7973c80e91304f74d9e6d8076256`
+   - 한국어판 MD5: `53820f596910ec0938e418aab73f97dd`
+   - 패치 파일 MD5: `b1309af4f0b78b1e77422ed9e68ea5f4`
 
 에뮬레이터(DeSmuME 0.9.13 등) 및 실기에서 플레이 가능하며, 세이브 데이터는 원본과 호환됩니다.
 
-## 번역 범위 (v20260707)
+## 번역 범위 (v20260709)
 
 - **스토리 모드(삼국영걸전)** 시나리오 전량 (110 엔트리, 5,200여 문자열)
 - **카드 데이터베이스**: 무장명·소속·계략명·계략 설명·특기
@@ -37,7 +37,8 @@
 
 | 경로 | 내용 |
 |---|---|
-| `SGS_kr_patch_v20260707.xdelta` | 한국어 패치 본체 (xdelta3 형식) |
+| `SGS_kr_patch_v20260709.xdelta` | 한국어 패치 본체 (xdelta3 형식, 최신) |
+| `SGS_kr_patch_v20260707.xdelta` | 이전 버전 패치 |
 | `docs/patch-notes.md` | 패치노트 (적용법·번역 범위·알려진 한계) |
 | `docs/dev-log.md` | 리버스 엔지니어링·한글화 작업 기록 (포맷 규명, 기법, 교훈) |
 | `docs/index.html` | 문서 사이트(Docsify) 진입점 — GitHub Pages로 호스팅 |
